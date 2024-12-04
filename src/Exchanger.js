@@ -18,11 +18,6 @@ export default function Exchanger() {
       setIsLoading(false);
     }
 
-    //   return () => {
-    //     second
-    //   }
-    // alert(!isLoading);
-
     if (from === toCur) return setConverted(amount);
     getAPI();
   }, [amount, from, toCur]);
